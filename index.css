@@ -1,39 +1,60 @@
+
 body {
     margin: 0;
+    padding: 10;
     background-color: #F5F5F5;
 } 
 
-header {
-    margin: 0;
-    width: 600px;
-    height: 167px;
-    background-image: url(/images/burger-header.png);
-    background-size: cover;
-}
-
 #header-name{
-    font-size: 30px;
-    top: 30px;
+    font-size: 39px;
+    line-height: 24px;
+    margin: 0;
+    padding-top: 40px;
 }
 
 #header-slogan {
     font-size: 22px;
-    top: 70px;
+    margin-top: 10;
 }
 
-.header-text {
-    position: absolute;
-    left: 40px;
+#header-slogan,
+#header-name{
+    margin-left: 50px;
+}
+
+.header-container {
+    background-image: url(/images/burger-header.png);
+    background-size: cover;
     color: white;
     font-family: 'Smythe';
     font-weight: 400;
+    height: 167px;
+    text-align: left;
+}
+
+header{
+    box-shadow: 0px 0px 6px 2px #666;
+}
+
+.menu-container{
+    box-shadow: 0px 0px 6px 2px #666;
+}
+
+.checkout-container{
+    box-shadow: 0px 8px 6px 2px #666;
+}
+
+header,
+.menu-container,
+.checkout-container,
+.order-confirm-container{
+    width: 600px;
+    margin: 0 auto;
+    background-color: whitesmoke;
 }
 
 .menu{
-    padding: 20px 0 0 0;
-    margin: 15px 0;
     width: 100%;
-    height: 100%;
 }
 
 .menu-inner{
@@ -99,6 +120,12 @@ header {
     box-shadow: 0px 0px 5px -2px #666;
 }
 
+.add-btn:hover,
+.add-btn:active{
+    background-color: #16DB99;
+    color: whitesmoke;
+}
+
 .order-header{
     display: flex;
     justify-content: center;
@@ -141,14 +168,20 @@ header {
     color: #BBBBBB;
 }
 
+.order-remove:hover,
+.order-remove:active{
+    color: red;
+}
+
 .order-price{
+    margin-left: auto;
     font-size: 22px;
     line-height: 24px;
     font-weight: 700;
 }
 
-.order-item .order-price{
-    position: absolute;
+.order-item {
+    position: flex;
     margin-right: 40px;
     right: 0;
 }
@@ -230,6 +263,12 @@ header {
     border: none;
     background-color: whitesmoke;
     color: black;
+    cursor: pointer;
+}
+
+.payment-form-close-btn:hover,
+.payment-form-close-btn:active{
+    color: red;
 }
 
 .payment-form{
@@ -249,19 +288,22 @@ header {
     padding-left: 20px;
 }
 
+.order-confirm-container{
+    display: flex;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
 .order-confirm{
-    display: block;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
     text-align: center;
     color: #065F46;
     background-color: #D1FAE5;
-    font-weight: 400px;
-    font-family: Smythe;
+    font-weight: 400;
+    font-family: 'Smythe';
     font-size: 32px;
-    line-height: 16.8px;
-    margin: 0 40px;
-    padding: 10px
+    width: 87%;
+    
 }
 
 .hidden{

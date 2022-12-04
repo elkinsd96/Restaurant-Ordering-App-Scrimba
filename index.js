@@ -201,8 +201,10 @@ function toggleButtons(bool){
 function getOrderConfirmHTML(){
     let orderConfirmHTML = document.getElementById('checkout-container')
     orderConfirmHTML.innerHTML = `
-        <div class="order-confirm">
-            <p class="order-confirm-text">Thanks, ${document.getElementById('name').value}! Your order is on its way!</p>
+        <div class="order-confirm-container">
+            <div class="order-confirm">
+                <p class="order-confirm-text">Thanks, ${document.getElementById('name').value}! Your order is on its way!</p>
+            </div>
         </div>
         `
     return orderConfirmHTML
