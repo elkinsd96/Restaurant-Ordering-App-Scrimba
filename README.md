@@ -4,9 +4,11 @@ Restaurant Ordering App Solo Project from [Scrimba](https://scrimba.com/learn/fr
 
 ## Project Link
 
-[Project Link]() Hosted using Netlify 
+[Project Link](https://restaurant-ordering-scrimba.netlify.app/) Hosted using Netlify 
 
 ## Previews
+<img src="./images/menu-screenshot.png"> <img src="./images/cart-screenshot.png">
+<img src="./images/payment-form-screenshot.png"> <img src="./images/order-confirmation-screenshot.png">
 
 ## Project Functionality
 
